@@ -10,7 +10,7 @@
       </div>
     </div>
     <mu-float-button @click="showJawaban" icon="arrow_downward" secondary class="demo-float-button"/>
-    <h2 id="jawaban" class="ayat" v-if="showJawaban">{{ jawaban }}</h2>
+    <h2 id="jawaban" class="ayat" v-if="jawabanShowed">{{ jawaban }}</h2>
   </div>
 </template>
 
@@ -96,7 +96,7 @@ export default {
 .container {
   margin: auto;
   widows: 100%;
-  padding: 2rem 10rem;
+  padding: 2rem;
   color: #555;
 }
 
